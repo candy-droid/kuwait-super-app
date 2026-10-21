@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Kuwait Super App – Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="app">
+
+  <!-- Blue glow behind the header -->
+  <div class="bg-wrap" aria-hidden="true"><div class="bg-glow"></div></div>
+
+  <!-- ============ TOP AREA ============ -->
+  <header class="top">
+    <!-- iOS status bar (mockup only – remove for a real web/webview build) -->
+    <div class="status-bar" aria-hidden="true">
+      <div class="sb-side"><span class="sb-time">9:41</span></div>
+      <div class="sb-island"><div class="island"><span class="cam-true"></span><span class="cam-face"></span></div></div>
+      <div class="sb-side"><img src="assets/status-icons.svg" width="78" height="13" alt=""></div>
+    </div>
+
+    <div class="brand-row">
+      <a class="brand" href="#">
+        <span class="brand-logo"><img src="assets/status-icons.png" alt=""></span>
+        <span class="brand-text"><strong>Kuwait</strong><small>Super app</small></span>
+      </a>
+      <a class="avatar" href="#" aria-label="Account"><img src="assets/avatar.png" width="40" height="40" alt=""></a>
+    </div>
+
+    <label class="search">
+      <img src="assets/icon-search.svg" width="18" height="18" alt="">
+      <input type="search" placeholder="Search for properties, jobs, services" aria-label="Search">
+    </label>
+
+    <nav class="chips" aria-label="Filter">
+      <button class="chip is-active" type="button">All</button>
+      <button class="chip" type="button">Vehicles &amp; parts</button>
+      <button class="chip" type="button">Mobile &amp; Electronics</button>
+      <button class="chip" type="button">Properties</button>
+    </nav>
+  </header>
+
+  <!-- ============ BODY ============ -->
+  <main class="body">
+
+    <!-- Featured event -->
+    <section class="events">
+      <div class="events-row">
+        <div class="ev-side"><img src="assets/event-left.png" alt=""></div>
+        <div class="ev-main"><img src="assets/event-center.png" alt="HORECA Kuwait 2026"></div>
+        <div class="ev-side"><img src="assets/event-right.png" alt=""></div>
+      </div>
+      <div class="events-text">
+        <h3 class="t-14">HORECA Kuwait 2026</h3>
+        <p class="ev-desc">B2B Exhibition- Horeca kuwait 14th edition 2026,<br>Kuwait hospitality and food service exhibition...</p>
+        <p class="ev-date">19 -24 JAN 2026</p>
+      </div>
+    </section>
+
+    <!-- Quick actions -->
+    <section class="quick">
+      <a class="qa" href="#">
+        <span class="qa-icon"><img src="assets/qa-recharge.png" alt=""></span>
+        <span class="qa-label">Mobile recharge</span>
+      </a>
+      <a class="qa" href="#">
+        <span class="qa-icon"><img class="crop-bills" src="assets/qa-bills.png" alt=""></span>
+        <span class="qa-label">Pay<br>Bills</span>
+      </a>
+      <a class="qa" href="#">
+        <span class="qa-icon"><img src="assets/qa-experts.png" alt=""></span>
+        <span class="qa-label">Find<br>Experts</span>
+      </a>
+      <a class="qa" href="#">
+        <span class="qa-icon"><img src="assets/qa-market.png" alt=""></span>
+        <span class="qa-label">Market<br>Place</span>
+      </a>
+    </section>
+
+    <!-- Categories -->
+    <section class="section">
+      <div class="sec-title">
+        <p class="eyebrow">Browse by category</p>
+        <h2 class="h2">What are you looking for?</h2>
+      </div>
+      <div class="cat-grid">
+        <a class="cat" href="#"><img src="assets/cat-properties.png" alt="">Properties &amp;<br>Building</a>
+        <a class="cat" href="#"><img class="contain" src="assets/cat-vehicles.png" alt="">Vehicles, Parts &amp; accessories</a>
+        <a class="cat" href="#"><img src="assets/cat-home-services.png" alt="">Home<br>Services</a>
+        <a class="cat" href="#"><img src="assets/cat-market.png" alt="">Market<br>Place</a>
+        <a class="cat" href="#"><img src="assets/cat-events.png" alt="">Events &amp; Activies</a>
+        <a class="cat" href="#"><img src="assets/cat-education.png" alt="">Educations</a>
+        <a class="cat" href="#"><img src="assets/cat-health.png" alt="">Health &amp; Beauty</a>
+        <a class="cat" href="#"><img src="assets/cat-news.png" alt="">Kuwait<br>News</a>
+        <button class="more-btn" type="button">More Category <img class="arrow" src="assets/arrow.svg" width="16" height="16" alt=""></button>
+      </div>
+    </section>
+
+    <!-- Hot deals -->
+    <section class="section">
+      <div class="sec-head gap-4">
+        <h2 class="h2">Hot Deals</h2>
+        <img src="assets/fire.png" width="12" height="16" alt="">
+        <a class="view-all" href="#">View all <img class="arrow" src="assets/arrow.svg" width="16" height="16" alt=""></a>
+      </div>
+      <div class="h-scroll">
+        <div class="poster"><img src="assets/deal-1.png" alt=""></div>
+        <div class="poster"><img src="assets/deal-2.png" alt=""></div>
+        <div class="poster"><img src="assets/deal-3.png" alt=""></div>
+        <div class="poster"><img src="assets/deal-4.png" alt=""></div>
+        <div class="poster"><img src="assets/deal-2.png" alt=""></div>
+        <div class="poster"><img src="assets/deal-5.png" alt=""></div>
+      </div>
+    </section>
+
+    <!-- Properties -->
+    <section class="section">
+      <div class="sec-head">
+        <h2 class="h2 grow">Properties &amp;<br>Buildings for sale</h2>
+        <a class="view-all" href="#">View all <img class="arrow" src="assets/arrow.svg" width="16" height="16" alt=""></a>
+      </div>
+      <div class="h-scroll">
+        <a class="product" href="#">
+          <span class="product-img"><img src="assets/property-1.png" alt=""></span>
+          <span class="product-info"><strong>Hexagon villa</strong><small>Seribu island, Indonesia</small><b>320,000</b></span>
+        </a>
+        <a class="product" href="#">
+          <span class="product-img"><img src="assets/property-2.png" alt=""></span>
+          <span class="product-info"><strong>Hexagon villa</strong><small>Seribu island, Indonesia</small><b>320,000</b></span>
+        </a>
+        <a class="product" href="#">
+          <span class="product-img"><img src="assets/property-3.png" alt=""></span>
+          <span class="product-info"><strong>Hexagon villa</strong><small>Seribu island, Indonesia</small><b>320,000</b></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Marketplace -->
+    <section class="promo promo--accent">
+      <div class="promo-inner">
+        <h2 class="h2 promo-title">Don’t miss in market place</h2>
+        <div class="h-scroll">
+          <div class="poster"><img src="assets/market-1.png" alt=""></div>
+          <div class="poster"><img src="assets/market-2.png" alt=""></div>
+          <div class="poster"><img src="assets/market-3.png" alt=""></div>
+          <div class="poster"><img src="assets/market-4.png" alt=""></div>
+          <div class="poster"><img src="assets/market-5.png" alt=""></div>
+        </div>
+        <a class="btn" href="#">View all <img class="arrow" src="assets/arrow-dark.svg" width="16" height="16" alt=""></a>
+      </div>
+      <div class="divider"></div>
+    </section>
+
+    <!-- Vehicles -->
+    <section class="section">
+      <div class="sec-head">
+        <h2 class="h2 grow">Vehicles, parts<br>and accessories for sale</h2>
+        <a class="view-all" href="#">View all <img class="arrow" src="assets/arrow.svg" width="16" height="16" alt=""></a>
+      </div>
+      <div class="h-scroll">
+        <a class="product" href="#">
+          <span class="product-img"><img class="crop-vehicle" src="assets/vehicle-1.png" alt=""></span>
+          <span class="product-info"><strong>Mitsubishi Lancer 2015</strong><small>Seribu island, Kuwait</small><b>320,000</b></span>
+        </a>
+        <a class="product" href="#">
+          <span class="product-img"><img src="assets/vehicle-2.png" alt=""></span>
+          <span class="product-info"><strong>Shock Absorber</strong><small>Seribu island, Kuwait</small><b>1,200</b></span>
+        </a>
+        <a class="product" href="#">
+          <span class="product-img"><img src="assets/vehicle-3.png" alt=""></span>
+          <span class="product-info"><strong>Hexagon villa</strong><small>Seribu island, Indonesia</small><b>320,000</b></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Kuwait updates + upcoming events -->
+    <section class="promo promo--primary">
+      <div class="sec-head px-8">
+        <h2 class="h2 grow">Kuwait Updates</h2>
+        <a class="view-all dark" href="#">View all news <img class="arrow" src="assets/arrow-dark.svg" width="16" height="16" alt=""></a>
+      </div>
+      <div class="h-scroll start">
+        <a class="news" href="#">
+          <span class="news-inner">
+            <span class="news-img"><img src="assets/news-1.png" alt=""></span>
+            <span class="news-info">
+              <strong>GCC condemns Houthi attacks against Saudi</strong>
+              <small>Gulf Cooperation Council (GCC) Secretary-General Jasem Al-Budaiwi on Sunday condemned Houthi attacks against Saudi Arabia, describing them as deliberate criminal acts that endanger civilian lives,</small>
+            </span>
+          </span>
+        </a>
+        <a class="news" href="#">
+          <span class="news-inner">
+            <span class="news-img"><img src="assets/news-2.png" alt=""></span>
+            <span class="news-info">
+              <strong>Amir receives French President Macron on official visit to Kuwait</strong>
+              <small>French President Emmanuel Macron arrived in Kuwait on Monday morning on an official visit, accompanied by an official delegation.</small>
+            </span>
+          </span>
+        </a>
+        <a class="news" href="#">
+          <span class="news-inner">
+            <span class="news-img"><img src="assets/news-1.png" alt=""></span>
+            <span class="news-info">
+              <strong>GCC condemns Houthi attacks against Saudi</strong>
+              <small>Gulf Cooperation Council (GCC) Secretary-General Jasem Al-Budaiwi on Sunday condemned Houthi attacks against Saudi Arabia, describing them as deliberate criminal acts that endanger civilian lives,</small>
+            </span>
+          </span>
+        </a>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="promo-inner">
+        <h2 class="h2 promo-title">Upcoming Events In Kuwait</h2>
+        <div class="events">
+          <div class="events-row">
+            <div class="ev-side"><img src="assets/event-left.png" alt=""></div>
+            <div class="ev-main"><img src="assets/event-center.png" alt="HORECA Kuwait 2026"></div>
+            <div class="ev-side"><img src="assets/event-right.png" alt=""></div>
+          </div>
+          <div class="events-text">
+            <h3 class="t-14">HORECA Kuwait 2026</h3>
+            <p class="ev-desc">B2B Exhibition- Horeca kuwait 14th edition 2026,<br>Kuwait hospitality and food service exhibition...</p>
+            <p class="ev-date">19 -24 JAN 2026</p>
+          </div>
+        </div>
+        <a class="btn" href="#">View all events <img class="arrow" src="assets/arrow-dark.svg" width="16" height="16" alt=""></a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ BOTTOM NAV ============ -->
+  <nav class="bottom-nav" aria-label="Main">
+    <div class="nav-bar"></div>
+    <div class="nav-list">
+      <a class="nav-item is-active" href="#"><img src="assets/nav-home.svg" width="24" height="24" alt="">Home</a>
+      <a class="nav-item" href="#"><img src="assets/nav-search.svg" width="24" height="24" alt="">Search</a>
+      <div class="nav-item nav-plus">
+        <span class="plus-ring"><a class="plus-btn" href="#" aria-label="Create post"><img src="assets/nav-add.svg" width="24" height="24" alt=""></a></span>
+      </div>
+      <a class="nav-item" href="#"><img src="assets/nav-posts.svg" width="24" height="24" alt="">My Posts</a>
+      <a class="nav-item" href="#"><img src="assets/nav-user.svg" width="24" height="24" alt="">Account</a>
+    </div>
+    <div class="home-indicator"></div>
+  </nav>
+
+</div>
+</body>
+</html>
