@@ -57,7 +57,7 @@ h2, h3 { font-weight: 600; }
 .top {
   position: sticky; top: 0; z-index: 20;
   display: flex; flex-direction: column; gap: 8px;
-  padding: 60px 16px 8px;
+  padding: 12px 16px 8px;
   background: var(--page);
   border-radius: 0 0 24px 24px;
 }
