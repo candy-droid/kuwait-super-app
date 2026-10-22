@@ -289,8 +289,8 @@
   <script>
     (function () {
       var ar = {
-        brandName: "الكويت",
-        brandSub: "سوبر آب",
+        // brandName: "الكويت",
+        // brandSub: "سوبر آب",
         langLabel: "اللغة",
         accountAria: "الحساب",
         searchPh: "ابحث عن عقارات، وظائف وخدمات",
@@ -354,7 +354,8 @@
       function apply(lang) {
         var rtl = lang === "ar";
         document.documentElement.lang = rtl ? "ar" : "en";
-        document.documentElement.dir = rtl ? "rtl" : "ltr";
+        document.documentElement.dir = "ltr";
+        document.documentElement.classList.toggle("lang-ar", rtl);
         document.title = rtl ? "سوبر آب الكويت – الرئيسية" : "Kuwait Super App – Home";
 
         document.querySelectorAll("[data-i18n]").forEach(function (el) {

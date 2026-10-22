@@ -77,7 +77,7 @@ h2, h3 { font-weight: 600; }
 .brand-logo img { position: absolute; left: -11.97%; top: -8.25%; width: 117.45%; height: 116.72%; }
 .brand-text { display: flex; flex-direction: column; width: 49px; }
 .brand-text strong { font-size: 14.48px; font-weight: 700; white-space: nowrap; }
-.brand-text small { font-size: 9.48px; font-weight: 600; color: var(--caption); height: 15.7px; }
+.brand-text small { font-size: 9.48px; font-weight: 600; color: var(--caption); height: auto; }
 .lang {
   margin-inline-start: auto;
   align-self: center;
@@ -101,9 +101,32 @@ h2, h3 { font-weight: 600; }
 }
 .avatar { flex: none; }
 .avatar img { width: 40px; height: 40px; object-fit: cover; }
-html[dir="rtl"] .brand-text { width: auto; }
-html[dir="rtl"] .brand-text small { height: auto; }
-html[dir="rtl"] .arrow-dark { transform: scaleX(-1); }
+/* Arabic: right-align text only. Layout, icons, and scrollers stay in place. */
+html.lang-ar .brand-text {
+  width: auto;
+  direction: rtl;
+  text-align: right;
+}
+html.lang-ar .brand-text small { height: auto; }
+html.lang-ar .search input,
+html.lang-ar .sec-title,
+html.lang-ar .sec-head > .h2,
+html.lang-ar .product-info,
+html.lang-ar .news-info {
+  direction: rtl;
+  text-align: right;
+}
+html.lang-ar .events-text,
+html.lang-ar .qa-label,
+html.lang-ar .cat span,
+html.lang-ar .promo-title,
+html.lang-ar .chip,
+html.lang-ar .nav-item span,
+html.lang-ar .more-btn span,
+html.lang-ar .btn span,
+html.lang-ar .view-all span {
+  direction: rtl;
+}
 
 .search {
   display: flex; align-items: center; gap: 8px;
